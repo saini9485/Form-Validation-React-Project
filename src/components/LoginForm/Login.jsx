@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Home from "./Home";
 import './Login.css';
 function Login(){ 
-   const name=useRef()
+   const Fullname=useRef()
    const email=useRef()
    const password=useRef()
    const [showHome,setShowHome]=useState(false)
@@ -10,7 +10,7 @@ function Login(){
     const localSignUp=localStorage.getItem("signUp")
     const localEmail=localStorage.getItem("email")
     const localPassword=localStorage.getItem("password")
-    const localName=localStorage.getItem("name")
+    const localName=localStorage.getItem("Fullname") 
    useEffect(()=>{
     if(localSignUp){
         setShowHome(true)
@@ -20,14 +20,16 @@ function Login(){
     }
    })
    const handleClick=()=>{
-       if(name.current.value&&email.current.value&&password.current.value)
+       if(Fullname.current.value&&email.current.value&&password.current.value)
       {
-        localStorage.setItem("name",name.current.value)
+        localStorage.setItem("Fullname",Fullname.current.value)
         localStorage.setItem("email",email.current.value)
         localStorage.setItem("password",password.current.value)
         localStorage.setItem("signUp",email.current.value)
         alert("Account created successfully!!")
         window.location.reload()
+      }else{
+        alert("Please Enter Detalis")
       }
    }
 
@@ -43,8 +45,8 @@ function Login(){
         <div>
             {showHome?<Home/>:
             (show?
-                <div className="container">
-                        <h1>Hello {localName}</h1>
+                <div className="Sign-container">
+                        <h1>Hello, {localName} Congratulation</h1>
                         <div className="input_space">
                             <input placeholder="Email" type='text' ref={email} />
                         </div>
@@ -54,15 +56,16 @@ function Login(){
                         <button onClick={handleSignIn}>Sign In</button>
                 </div>
                 :
-                <div className="container">
+                <div className="Login-Container">
+                    <div>   <h1>Sign Up Form </h1>      </div>
                         <div className="input_space">
-                            <input placeholder="Name" type='text' ref={name} />
+                            <input minLength={6} placeholder="FullName" type='text' ref={Fullname} required/>
                         </div>
                         <div className="input_space">
-                            <input placeholder="Email" type='text' ref={email} />
+                            <input placeholder="Email" type='text' ref={email} required />
                         </div>
                         <div className="input_space">
-                            <input placeholder="Password" type='password' ref={password} />
+                            <input minLength={7} placeholder="Password" type='password' ref={password} required />
                         </div>
                         <button onClick={handleClick}>Sign Up</button>
                 </div>)

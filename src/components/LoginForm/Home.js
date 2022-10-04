@@ -11,9 +11,9 @@ function Home(){
     }
     
     return(
-        <div>
+        <div className="Home-Container">
             <h1>Home Page </h1>
-            <p>Wellcome {localStorage.getItem('name')}</p>
+            <h4>Welcome To  {localStorage.getItem('Fullname')} </h4>
             <button onClick={logout} className="logout">LogOut</button>
             <button onClick={deleteAccount} className="delete">Delete</button>
         </div>
