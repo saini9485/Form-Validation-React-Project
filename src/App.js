@@ -1,10 +1,16 @@
 import './App.css';
-import { RegisterForm } from './components/RegisterForm/RegisterForm';
+//import Home from './components/LoginForm/Home';
+import Login from './components/LoginForm/Login';
+//import { RegisterForm } from './components/RegisterForm/RegisterForm';
+//import {Login} from "./components/LoginForm/Login"
 function App() {
   return (
    
     <div>
-<RegisterForm/>
+{/* <RegisterForm/> */}
+{/* <Login/> */}
+<Login/>
+{/* <Home/> */}
     </div>
   );
 }
