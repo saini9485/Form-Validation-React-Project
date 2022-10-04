@@ -1,0 +1,60 @@
+ 
+  * {
+    box-sizing: border-box;
+  }
+  form {
+    padding: 16px;
+    border: 1px solid #ccc;
+  }
+  .Main_Form {
+    width: 400px;
+    margin: 32px auto;
+  }
+  .form-group {
+    /* font-weight: bold;  */
+    margin: 16px 0 8px 0;
+  }
+  label,
+  input,
+  textarea,
+  select {
+    width: 100%;
+  }
+  input,
+  textarea,
+  select {
+    line-height: 24px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  input,
+  select {
+    height: 24px;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    bottom: -2px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+  }
+  textarea {
+    height: 48px;
+  }
+  .btn{
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; 
+        border-radius: 10px; 
+        margin-left: 30%;
+
+  }
+
+  
