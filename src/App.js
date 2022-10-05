@@ -5,12 +5,12 @@ import Login from './components/LoginForm/Login';
 //import {Login} from "./components/LoginForm/Login"
 function App() {
   return (
-   
+
     <div>
-{/* <RegisterForm/> */}
-{/* <Login/> */}
-<Login/>
-{/* <Home/> */}
+      {/* <RegisterForm/> */}
+      {/* <Login/> */}
+      <Login />
+      {/* <Home/> */}
     </div>
   );
 }
