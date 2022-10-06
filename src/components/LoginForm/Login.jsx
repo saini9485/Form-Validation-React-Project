@@ -49,7 +49,8 @@ function Login(){
             {showHome?<Home/>:
             (show?
                 <div className="Sign-container">
-                        <h1>Hello, {localName} Congratulation</h1>
+                        {/* <h1>Hello, {localName} Congratulation</h1> */}
+                        <h1>Please Login</h1>
                         <div className="input_space">
                             <input placeholder="Email" type='text' ref={email} />
                         </div>
