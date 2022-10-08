@@ -8,6 +8,7 @@
 
 <h1>Register Validation Form</h1>
 <img src="output1.png" alt ="output">
+
 <img src="output2.png" alt ="output">
 
 
