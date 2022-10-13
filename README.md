@@ -1,4 +1,4 @@
-<h1>SignUp Validation Form React.JS</h1>
+<h1>SignUp form Validation Form React.JS</h1>
 
 <img src="SignUp1.png" alt="output">
 
